@@ -58,6 +58,32 @@ func cal() {
 
 	//字符串替换
 	fmt.Println(strings.Replace("渗透测试渗透工程渗透师NEWX666", "渗透", "肾透", 2))
+
+	//按照某个字符切割
+
+	fmt.Println(strings.Split("求求-哥哥-带带-弟弟", "-"))
+	//fmt.Println(strings.Replace("求求-哥哥-带带-弟弟", "求求-哥哥-带带-弟弟", "qqggdddd", -1))
+
+	//字符串字母大小写转换
+	fmt.Println(strings.ToLower("FUCkYoU"))
+	fmt.Println(strings.ToUpper("fuckyou"))
+
+	//将字符串左右两边的空格去除
+	fmt.Println(strings.TrimSpace("    dddd    "))
+
+	//将字符串两边指定的字符去除
+	fmt.Println(strings.Trim("~root@localhost~", "~"))
+
+	//将字符串右边指定的字符去掉
+	fmt.Println(strings.TrimRight("~root@localhost~", "~"))
+
+	//将字符串左边指定的字符去掉
+	fmt.Println(strings.TrimLeft("~root@localhost~", "~"))
+
+	//判断字符串是否以指定的字符串开头
+
+	fmt.Println(strings.HasPrefix("https://github.com/sukusec301/StudyGo.git", "https"))
+
 }
 func main() {
 	cal()
