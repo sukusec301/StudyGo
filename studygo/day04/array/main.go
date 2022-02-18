@@ -27,4 +27,25 @@ func main() {
 	//特殊变种，长度为10的数组，里面只写2个，剩下的都会被零值补全
 	a5 := [10]int{1, 2}
 	fmt.Println(a5)
+	test()
+}
+
+func test() {
+	//数组：就是存放元素的容器，必须指定存放原色的类型和容量（长度）
+	var a1 = [...]string{"dea", "dead", "dasd", "asda"}
+	fmt.Println(a1[0], a1[1], a1[2], a1[3])
+	var a2 = [2]int{1, 2}
+	fmt.Println(len(a2), cap(a2))
+	var a3 = [...]int{213, 21, 312, 3, 213, 123, 12, 3}
+	for i := 0; i < len(a3); i++ {
+		sum := 0
+		sum += a3[i]
+	}
+	a4 := [...]string{"10", "123", "213", "123", "123", "89673"}
+	sum := 0
+	for _, j := range a4 {
+		sum = sum + j
+		fmt.Printf("数组里面数的和为：%d", sum)
+	}
+
 }
