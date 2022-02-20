@@ -15,6 +15,7 @@ func main() {
 		} else {
 			fmt.Println("Nothing to do!")
 		}
+		return nil
 	}()
 
 	a1 := [3]string{"beijing", "shanghai", "guangdong"}
