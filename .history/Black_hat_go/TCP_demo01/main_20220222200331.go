@@ -12,8 +12,6 @@ func main() {
 		conn, err := net.Dial("tcp", address)
 		if err != nil {
 			continue
-		} else {
-			fmt.Println("Sorry!there is something wrong!")
 
 		}
 		conn.Close()

@@ -12,12 +12,9 @@ func main() {
 		conn, err := net.Dial("tcp", address)
 		if err != nil {
 			continue
-		} else {
-			fmt.Println("Sorry!there is something wrong!")
-
+			conn.close()
+			fmt.Printf("%d open\n", i)
 		}
-		conn.Close()
-		fmt.Printf("%d open\n", i)
 	}
 
 }

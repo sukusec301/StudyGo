@@ -14,7 +14,7 @@ func main() {
 			continue
 		} else {
 			fmt.Println("Sorry!there is something wrong!")
-
+			break
 		}
 		conn.Close()
 		fmt.Printf("%d open\n", i)
